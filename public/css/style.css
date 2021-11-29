@@ -491,6 +491,352 @@ nav > ul > li .drop-down li a {
   font-size: 16px;
 }
 
+/* page banner */
+.page-banner {
+  position: relative;
+  width: 100%;
+  padding-bottom: 35%;
+}
+
+.page-banner .bg-linear {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(79, 79, 79, 0) 0%, rgba(0, 0, 0, 0.47) 100%);
+}
+
+.page-banner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-banner .text {
+  color: #fff;
+  position: absolute;
+  left: 17%;
+  bottom: 30%;
+  width: 30%;
+}
+
+.page-banner .text h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.page-banner .text p {
+  margin: 0;
+}
+
+.page-banner .tab-main {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(50%);
+}
+
+.page-banner .tab-main button a {
+  display: block;
+  border: 0;
+  background-color: #E6F1EA;
+  color: #14622B;
+  padding: 15px 40px;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
+  margin: 0 7px;
+}
+
+.page-banner .tab-main button.active a {
+  background-color: #5EB879;
+  color: #fff;
+}
+
+/* page title */
+.page-title {
+  text-align: center;
+  position: relative;
+  color: #48A449;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.page-title::after {
+  width: 50px;
+  height: 3px;
+  background-color: #48A449;
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*  page-content */
+.page-content {
+  padding: 100px 20px;
+}
+
+/* 企業宗旨 */
+.purpose {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.page-slogan {
+  text-align: center;
+  position: relative;
+  color: #094209;
+  font-size: 14px;
+  width: fit-content;
+  margin: 45px auto 0;
+}
+
+.page-slogan::before {
+  position: absolute;
+  content:"";
+  width: 50px;
+  height: 1px;
+  background-color: #C7D1C7;
+  top: calc(50% - 0.5px);
+  left: -57px;
+}
+
+.page-slogan::after {
+  position: absolute;
+  content:"";
+  width: 50px;
+  height: 1px;
+  background-color: #C7D1C7;
+  top: calc(50% - 0.5px);
+  right: -57px;
+}
+
+/* 歷史沿革 */
+.history-content {
+  margin-bottom: 15px;
+}
+
+.history .year-content {
+  color: #448E5A;
+  padding: 3px 25px 5px;
+  border: 1px solid #B1D8BD;
+  /* border-radius: 100px; */
+}
+
+.history .event {
+  margin: 3px 0 0 10px;
+}
+
+.history .event ul li {
+  margin-bottom: 5px;
+}
+
+/* 工作團隊 */
+.group-content {
+  align-items: stretch;
+}
+.group-content .nav {
+  width: 200px;
+  background-color: #E6F1E9;
+  /* height: 100%; */
+}
+
+.group-content .nav button {
+  color: #4d4d4d;
+  padding: 20px 0;
+  letter-spacing: 1px;
+  width: 100%;
+  display: block;
+}
+
+.group-content .nav button.active {
+  border-radius: 0;
+  background-color: #80A98C;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+}
+
+.group-content .nav button.active::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-color: transparent transparent transparent #80A98C;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.group-content .tab-content {
+  width: calc(100% - 220px);
+  background-color: #F5F5F5;
+  /* height: 100%; */
+  padding: 20px 30px;
+}
+
+.group-content .tab-content p {
+  color: #333;
+}
+
+.group-content .tab-content h4 {
+  color: #23813E;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* 交通資訊 */
+.traffic .car {
+  padding-left: 35px;
+}
+
+.traffic .car .traffic-title {
+  color: #307A46;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+}
+
+.traffic .car .traffic-title::after {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/mountain_icon.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  content: "";
+  top: 50%;
+  left: -35px;
+  transform: translateY(-50%);
+}
+
+.traffic .car p {
+  color: #6C6C6C;
+}
+
+.traffic .info {
+  background: #F5F5F5;
+  padding: 20px 25px;
+  margin-top: 45px;
+}
+
+.traffic .info h4 {
+  color: #14622B;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.traffic .info ul li {
+  line-height: 1.8;
+}
+
+.traffic .map {
+  width: 100%;
+}
+
+.traffic .map img {
+  width: 100%;
+}
+
+/* 服務項目 */
+.service {
+  width: 100%;
+  max-width: 840px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.service-main {
+  background: #F6FFF8;
+  border: 1px solid #B1D8BD;
+  padding: 25px 40px;
+  margin-bottom: 10px;
+}
+
+.service-main p {
+  color: #333;
+  line-height: 1.7;
+}
+
+.service-main button {
+  outline: none;
+}
+
+.service-main button {
+  outline: none;
+  display: block;
+  margin: 60px 0 0 auto;
+}
+
+.service-main button a {
+  display: block;
+  padding: 6px 45px;
+  border-radius: 100px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  font-weight: bold;
+  background-image: url(../img/arrow-white.svg);
+  background-size: 10px;
+  background-position: calc(100% - 15px) center;
+  background-repeat: no-repeat;
+  background-color: #8ECBA0;
+}
+
+.service-second {
+  background: #F5F5F5;
+  border: 1px solid #C4C4C4;
+  padding: 20px;
+}
+
+.service-second p {
+  margin: 0;
+  text-align: center;
+}
+
+/* 坡地知識 */
+.knowledge-inner {
+  padding: 10px;
+  border-bottom: 1px solid #D7D7D7;
+}
+
+.knowledge-inner:last-child {
+  border: 0;
+}
+
+.knowledge-inner p {
+  margin: 0;
+}
+
+.knowledge-inner .download-box a {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  justify-content: flex-end;
+}
+
+.knowledge-inner .download-box a span {
+  color: #48965F;
+  margin-right: 5px;
+}
+
+.knowledge-inner .download-box a img {
+  width: 17px;
+}
+
 /* footer */
 
 footer {
